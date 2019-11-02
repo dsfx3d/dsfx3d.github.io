@@ -6,18 +6,38 @@
 @import './modules/globals';
 
 #hero {
-  border: solid 2.5px black;
+  border: solid 100px black;
+  border-bottom-width: 100px;
+  border-left: 0;
+  border-right: 0;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+
+  @include breakpoint(sm) {
+    flex-direction: row;
+  }
+
+  @keyframes fade-entry {
+    from {
+      opacity: 0;
+      top: 10px;
+    }
+    to {
+      opacity: 1;
+      top: 0px;
+    }
+  }
 
   #title {
     text-align: center;
     div:first-child {
+      position: relative;
       font-size: 3.5rem;
+      animation: fade-entry 0.5s .5s backwards;
     }
     small {
       color: #afafaf;
@@ -25,11 +45,15 @@
   }
 
   .icons {
-    margin: 10px 50px;
+    margin: 10px 20px;
     img {
-      width: 32px;
-      margin: auto 25px;
+      width: 64px;
+      margin: auto 15px;
       cursor: pointer;
+
+      @include breakpoint(sm) {
+        width: 42px;
+      }
     }
   }
 }
