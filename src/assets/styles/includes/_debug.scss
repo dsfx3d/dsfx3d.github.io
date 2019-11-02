@@ -1,0 +1,9 @@
+.d {
+  border: 0.5px solid red;
+  &.b {
+    border: 0.5px solid blue;
+  }
+  &.g {
+    border: 0.5px solid green;
+  }
+}
