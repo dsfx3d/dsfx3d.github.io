@@ -4,7 +4,7 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp dev",
+    "dev": "gulp build && gulp dev",
     "build": "gulp build"
   },
   "repository": {
