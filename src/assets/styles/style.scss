@@ -7,15 +7,11 @@
 
 #hero {
   border: solid 2.5px black;
-  border-left: 0;
-  border-right: 0;
-  border-bottom-width: 4px;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   #title {
@@ -30,9 +26,6 @@
 
   .icons {
     margin: 10px 50px;
-    @include breakpoint(sm) {
-      margin: 10px 0px;
-    }
     img {
       width: 32px;
       margin: auto 25px;
