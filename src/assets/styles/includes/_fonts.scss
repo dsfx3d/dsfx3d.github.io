@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans&display=swap');
 
-.montserrat {
-  font-family: 'Montserrat', sans-serif;
+.gothic {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif
 }
 
 @function get-font($font) {

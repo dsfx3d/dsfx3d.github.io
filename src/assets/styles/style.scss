@@ -3,4 +3,33 @@
 @import './includes/responsive.mixin';
 
 // @import './includes/debug';
-@import './modules/globals'
+@import './modules/globals';
+
+#hero {
+  border: solid 2.5px black;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  #title {
+    text-align: center;
+    div:first-child {
+      font-size: 3.5rem;
+    }
+    small {
+      color: #afafaf;
+    }
+  }
+
+  .icons {
+    margin: 10px 50px;
+    img {
+      width: 32px;
+      margin: auto 25px;
+      cursor: pointer;
+    }
+  }
+}
